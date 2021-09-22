@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav container py-2">
+            <h1 class="logo mb-0">OO</h1>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list d-md-flex align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Get in Touch</a></li>
+                </ul>
+                <i class="fas fa-times" id="nav-close"></i>
+            </div>
+            <div class="menu-hamburgar" id="nav-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="container">
+                <div class="home-info text-center">
+                    <h1>Hi, I am a Front-end Developer</h1>
+                    <p class="mb-4">I build amazing responsive websites and web applications. Do you need a developer?</p>
+                    <a href="#" class="button">View my Works</a>
+                </div>
+            </div>
+            <!-- <div class="curve">
+                <div class="concave-bottom">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="25px" viewBox="0 0 1366 25" xml:space="preserve" preserveAspectRatio="none" class="mtn-curve__concave mtn-curve__curve-desktop">
+                        <path d="M683.1,23.9C386.6,23.9,129.2,14.1,0,0v25h1366V0C1236.7,14.1,979.4,23.9,683.1,23.9z" class="mtn-svg-fill--white" style="z-index: 2;"></path>
+                    </svg>
+                </div>
+            </div> -->
+        </section>
+        <section class="skills">
+            <div class="container">
+                <div class="skill-info">
+                    <h4>Skills</h4>
+                    <div class="bar"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-4">
+                            <div class="skill-list">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">HTML5</div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">CSS3</div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="skill-list">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">Bootstrap</div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">Vue</div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">Nuxt</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="skill-list">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">Wordpress</div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">Git</div>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-circle mr-3"></i>
+                                    <div class="skill-name">Sass</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <div class="project-info">
+                    <h4>My Projects</h4>
+                    <div class="bar"></div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="project">
+                                <div class="content">
+                                    <h3>Project 1</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                                    <a href="#" class="button">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="project">
+                                <div class="content">
+                                    <h3>Project 2</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                                    <a href="#" class="button">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="project">
+                                <div class="content">
+                                    <h3>Project 3</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, mollitia voluptas dolore reprehenderit nulla consectetur ipsa accusantium facilis! Cumque, voluptate!</p>
+                                    <a href="#" class="button">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-info">
+                    <h4>Get In Touch</h4>
+                    <div class="bar"></div>
+                    <form>
+                        <div class="form-grid">
+                            <input type="text" name="name" id="name" class="form-element" placeholder="Name">
+                            <input type="email" name="email" id="email" class="form-element" placeholder="Email">
+                            <textarea name="message" id="message" placeholder="Message" class="form-area"></textarea>
+                        </div>
+                        <div class="text-right">
+                            <input type="submit" value="Send Message" class="submit-button">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" class="mr-2">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#" class="mr-2">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" class="mr-2">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
+        <p>copyright © 2021</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

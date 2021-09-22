@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+header {
+  background: transparent;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+}
+
+header .nav .logo {
+  color: white;
+}
+
+header .nav .nav-menu {
+  position: relative;
+}
+
+header .nav .nav-menu .nav-list .nav-item .nav-link {
+  color: #23A9D5;
+}
+
+header .nav .nav-menu #nav-close {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #23A9D5;
+  cursor: pointer;
+}
+
+header .nav .menu-hamburgar .bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+header.is-scrolling {
+  background-color: #23A9D5;
+  -webkit-box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+          box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+}
+
+.button {
+  color: #23A9D5;
+  background-color: #fff;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.home {
+  background-color: #23A9D5;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.home .home-info {
+  color: #fff;
+}
+
+.home .home-info h1 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+}
+
+.home .home-info p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.home .curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+}
+
+.home .curve .concave-bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.skills .skill-info h4, .skills .project-info h4, .skills .contact-info h4, .projects .skill-info h4, .projects .project-info h4, .projects .contact-info h4, .contact .skill-info h4, .contact .project-info h4, .contact .contact-info h4 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: #23A9D5;
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.skills .skill-info .bar, .skills .project-info .bar, .skills .contact-info .bar, .projects .skill-info .bar, .projects .project-info .bar, .projects .contact-info .bar, .contact .skill-info .bar, .contact .project-info .bar, .contact .contact-info .bar {
+  background-color: #23A9D5;
+  width: 65px;
+  height: 3px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+.skills {
+  padding: 80px 16px 80px;
+}
+
+.skills .skill-info .skill-list .fas {
+  color: #23A9D5;
+}
+
+.projects {
+  background: #e9eff1;
+  padding: 80px 16px 80px;
+}
+
+.projects .project-info .project {
+  background-image: url(../images/project-1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.projects .project-info .project:hover .content {
+  opacity: 1;
+}
+
+.projects .project-info .project .content {
+  color: #fff;
+  background-color: rgba(17, 128, 165, 0.8);
+  padding: 32px;
+  border-radius: 16px;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects .project-info .project .content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.projects .project-info .project .content p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.contact {
+  padding: 80px 16px 80px;
+}
+
+.contact .contact-info .form-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact .contact-info .form-grid .form-element, .contact .contact-info .form-grid .form-area {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  color: #313131;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 1px solid #23A9D5;
+}
+
+.contact .contact-info .form-grid .form-area {
+  grid-column: 1/-1;
+}
+
+.contact .contact-info .submit-button {
+  display: inline-block;
+  color: #FFF;
+  font-size: 16px;
+  background-color: #23A9D5;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 0;
+  background: #23A9D5;
+}
+
+footer .social {
+  margin-bottom: 16px;
+}
+
+footer .social .fab {
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  header .nav .nav-menu {
+    position: fixed;
+    background: white;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    -webkit-box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+            box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 1rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  header .nav .show-menu {
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  header .nav .nav-menu .nav-list .nav-item .nav-link {
+    padding: 12px 18px;
+    color: white;
+  }
+  header .nav .nav-menu #nav-close {
+    display: none;
+  }
+  header .nav .menu-hamburgar {
+    display: none;
+  }
+  .home {
+    min-height: 550px;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+  }
+  .home .home-info h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .home .home-info p {
+    font-size: 24px;
+    line-height: 36px;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .skills .skill-info .skill-list {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .contact {
+    padding: 60px 16px 60px;
+  }
+  .contact .contact-info form {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .contact .contact-info form .form-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact .contact-info form {
+    max-width: 780px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
