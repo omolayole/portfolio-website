@@ -39,6 +39,8 @@ header {
                     .nav-link {
                         color: #23A9D5;
                     }
+
+                    
                 }
             }
 
@@ -281,6 +283,29 @@ footer {
                 box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
                 padding: 1rem;
                 transition: .4s;
+
+                .nav-list { 
+                    .nav-item {
+                        .nav-link {
+                            margin: 12px 18px 17px;
+                            padding: 0;
+                        }
+    
+                        .active-link {
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 50%;
+                                height: 2px;
+                                background: #23A9D5;
+                                bottom: -6px;
+                                left: 0;
+                                //padding: 0 18px;
+                            }
+                        }
+                    }
+                }
             }
 
             .show-menu {
@@ -298,8 +323,23 @@ footer {
                 .nav-list {
                     .nav-item {
                         .nav-link {
-                            padding: 12px 18px;
+                            margin: 12px 18px;
                             color: white;
+                            padding: 0;
+                        }
+
+                        .active-link {
+                            position: relative;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background: #fff;
+                                bottom: -6px;
+                                left: 0;
+                                padding: 0 18px;
+                            }
                         }
                     }
                 }
@@ -336,6 +376,7 @@ footer {
     }
 
     .skills {
+        padding: 100px 16px 100px;
     
         .skill-info {
     
@@ -346,8 +387,12 @@ footer {
         }
     }
 
+    .projects {
+        padding: 100px 16px 100px;
+    }
+
     .contact {
-        padding: 60px 16px 60px;
+        padding: 100px 16px 120px;
     
         .contact-info {
             form {
@@ -364,7 +409,6 @@ footer {
 
 @media (min-width: 1200px) { 
     .contact {
-    
         .contact-info {
             form {
                 max-width: 780px;
